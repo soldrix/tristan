@@ -5,7 +5,7 @@ session_start();
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png"  href="/img/logositelitesoft2019.svg">
+    <link rel="icon" type="image/png"  href="img/logositelitesoft2019.svg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
     <title>Litesoft</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -141,22 +141,22 @@ session_start();
 
 <!--    nav-bar left-->
     <nav class="col-lg-1 position-sticky d-none d-lg-flex flex-column pt-1 max-vh-100 justify-content-center" style="background-color: var(--secondarycolor)">
-        <a class="mt-3 align-self-center" href="#"><img src="/img/onlyLogo.svg" alt="Logo Litesoft"></a>
+        <a class="mt-3 align-self-center" href="#"><img src="img/onlyLogo.svg" alt="Logo Litesoft"></a>
         <ul class="list-unstyled h-100 d-flex flex-column justify-content-center align-self-center" style="width: 50px">
             <li class="my-3">
-                <a href="#"><img src="/img/iconPresta.svg" alt="Préstation" ></a>
+                <a href="#"><img src="img/iconPresta.svg" alt="Préstation" ></a>
             </li>
             <li class="my-3">
-                <a href="#"><img  src="/img/iconReal.svg" alt="Réalisation" ></a>
+                <a href="#"><img  src="img/iconReal.svg" alt="Réalisation" ></a>
             </li>
             <li class="my-3">
-                <a href="#"><img src="/img/iconEquipe.svg" alt="Equipe" ></a>
+                <a href="#"><img src="img/iconEquipe.svg" alt="Equipe" ></a>
             </li>
             <li class="my-3">
-                <a href="#"><img src="/img/iconRef.svg" alt="Référence" ></a>
+                <a href="#"><img src="img/iconRef.svg" alt="Référence" ></a>
             </li>
             <li class="my-3">
-                <a href="#"><img src="/img/iconFaq.svg" alt="F.A.Q." ></a>
+                <a href="#"><img src="img/iconFaq.svg" alt="F.A.Q." ></a>
             </li>
         </ul>
     </nav>
@@ -165,11 +165,11 @@ session_start();
     <div id="page" class="container-fluid col-lg-9 p-1 m-0 d-flex flex-column max-vh-100 min-vh-100 vh-100 " style="background-color: var(--primarycolor);margin-top: 56px;">
         <div id="pageHome" class="col-11 d-flex d-sm-flex  flex-column p-1 align-self-center ">
             <div class="col-auto mb-4 p-0 d-none d-lg-flex">
-                <img src="/img/groslitesoft.svg" alt="" style="width: 37.5%">
+                <img src="img/groslitesoft.svg" alt="" style="width: 37.5%">
             </div>
             <div class="col-auto col-sm-auto col-md-auto col-lg-auto mb-4 d-flex flex-column flex-sm-column flex-md-column flex-lg-row p-0 justify-content-between" style="background-color: #0b4358">
                 <div class="col-auto col-sm-auto col-md-auto col-lg-4 align-self-center mt-2 mb-5">
-                    <img class=" align-self-center img-fluid w-100" src="/img/logo.gif" alt="logo" >
+                    <img class=" align-self-center img-fluid w-100" src="img/logo.gif" alt="logo" >
                 </div>
                 <div class="col-auto col-sm-auto col-md-auto col-lg-7 align-self-center my-2 p-3 text-light" style="background-color: #0B4358;font-size: 10px">
                     <p class="text-center font-weight-bold" style="color: #1B81C4;font-size: 20px">Qui Somme nous?</p>
@@ -324,7 +324,7 @@ session_start();
                     </ol>
                     <div  class="carousel-inner">
                         <div class="carousel-item active" data-interval="10000">
-                            <img id="loupe1" class="position-absolute" src="/img/LOUPE.svg"  onclick="carousel(false)">
+                            <img id="loupe1" class="position-absolute" src="img/LOUPE.svg"  onclick="carousel(false)">
                             <img id="lol" src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
                             <div class="carousel-caption d-block d-md-none">
                                 <h5>First slide label</h5>
@@ -334,7 +334,7 @@ session_start();
                             </div>
                         </div>
                         <div  class="carousel-item" data-interval="2000">
-                            <img id="loupe2" class="position-absolute" src="/img/LOUPE.svg" onclick="carousel(false)">
+                            <img id="loupe2" class="position-absolute" src="img/LOUPE.svg" onclick="carousel(false)">
                             <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
                             <div class="carousel-caption d-block d-md-none">
                                 <h5>First slide label</h5>
@@ -344,7 +344,7 @@ session_start();
                             </div>
                         </div>
                         <div  class="carousel-item">
-                            <img id="loupe3" class="position-absolute" src="/img/LOUPE.svg"  onclick="carousel(false)">
+                            <img id="loupe3" class="position-absolute" src="img/LOUPE.svg"  onclick="carousel(false)">
                             <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
                             <div class="carousel-caption d-block d-md-none">
                                 <h5>First slide label</h5>
@@ -377,7 +377,7 @@ session_start();
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-interval="10000">
-                            <img id="loupe4" class="position-absolute" src="/img/LOUPE.svg"  onclick="carousel(false)">
+                            <img id="loupe4" class="position-absolute" src="img/LOUPE.svg"  onclick="carousel(false)">
                             <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
                             <div class="carousel-caption d-block d-md-none">
                                 <h5>First slide label</h5>
@@ -387,7 +387,7 @@ session_start();
                             </div>
                         </div>
                         <div class="carousel-item" data-interval="2000">
-                            <img id="loupe5" class="position-absolute" src="/img/LOUPE.svg"  onclick="carousel(false)">
+                            <img id="loupe5" class="position-absolute" src="img/LOUPE.svg"  onclick="carousel(false)">
                             <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
                             <div class="carousel-caption d-block d-md-none">
                                 <h5>First slide label</h5>
@@ -397,7 +397,7 @@ session_start();
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img id="loupe6" class="position-absolute" src="/img/LOUPE.svg"  onclick="carousel(false)">
+                            <img id="loupe6" class="position-absolute" src="img/LOUPE.svg"  onclick="carousel(false)">
                             <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
                             <div class="carousel-caption d-block d-md-none">
                                 <h5>First slide label</h5>
@@ -532,8 +532,8 @@ session_start();
         <div class="col-auto  px-0 align-self-center" >
             <p class="text-light mb-0 mt-2">Profil</p>
 <!--            image profil-->
-            <div class="d-flex justify-content-center mb-3" style="background-image: url('/img/singe.svg');background-repeat: no-repeat;object-fit: cover;width: 150px;height: 150px">
-                <div class="align-self-center p-0"  style="background: white url('/img/jean.jpg') no-repeat center center;border-radius: 100%;background-size: cover ;width: 130px;height: 130px;">
+            <div class="d-flex justify-content-center mb-3" style="background-image: url('img/singe.svg');background-repeat: no-repeat;object-fit: cover;width: 150px;height: 150px">
+                <div class="align-self-center p-0"  style="background: white url('img/jean.jpg') no-repeat center center;border-radius: 100%;background-size: cover ;width: 130px;height: 130px;">
                 </div>
             </div>
 <!--            ligne séparation-->
@@ -545,7 +545,7 @@ session_start();
         <div class="col-auto d-flex flex-column align-self-center">
             <p class="text-light text-center mt-3">Contactez nous</p>
             <div class="col-auto d-flex justify-content-center flex-column w-100 p-0">
-                <img class="h-50 w-50 align-self-center mb-1" src="/img/enveloppe.svg" alt="">
+                <img class="h-50 w-50 align-self-center mb-1" src="img/enveloppe.svg" alt="">
                 <p class="text-center" style="color: #1B81C4">
                     Service commercial <br>
                     <a class="text-decoration-none" style="color: #AAB1B4" href="mailto:contact@litesoft.fr">contact@litesoft.fr</a>
@@ -553,7 +553,7 @@ session_start();
 
             </div>
             <div class="col-auto d-flex justify-content-center flex-column w-100 p-0">
-                <img class="h-50 w-50 align-self-center mb-1" src="/img/boue.svg" alt="">
+                <img class="h-50 w-50 align-self-center mb-1" src="img/boue.svg" alt="">
                 <p class="text-center" style="color: #1B81C4 ">
                     Support <br>
                     <a class="text-decoration-none" style="color: #AAB1B4" href="mailto:support@litesoft.fr">support@litesoft.fr</a>
@@ -607,7 +607,7 @@ session_start();
                 <li class="list active">
                     <a onclick="changePage(0)">
                         <span class="icon">
-                            <img src="../img/iconContact.svg" >
+                            <img src="img/iconContact.svg" >
 
                         </span>
                         <span class="text">Contact</span>
@@ -616,7 +616,7 @@ session_start();
                 <li class="list">
                     <a onclick="changePage(2)">
                         <span class="icon" >
-                            <img src="../img/iconPresta.svg" >
+                            <img src="img/iconPresta.svg" >
                         </span>
                         <span class="text">Prestations</span>
                     </a>
@@ -624,7 +624,7 @@ session_start();
                 <li class="list">
                     <a onclick="changePage(3)">
                         <span class="icon">
-                            <img src="../img/iconRef.svg" >
+                            <img src="img/iconRef.svg" >
                         </span>
                         <span class="text">Références</span>
                     </a>
@@ -632,7 +632,7 @@ session_start();
                 <li class="list">
                     <a onclick="changePage(4)">
                         <span class="icon">
-                            <img src="../img/iconEquipe.svg" >
+                            <img src="img/iconEquipe.svg" >
                         </span>
                         <span class="text">Équipe</span>
                     </a>
@@ -640,7 +640,7 @@ session_start();
                 <li class="list">
                     <a onclick="changePage(5)">
                         <span class="icon">
-                            <img src="../img/iconReal.svg" >
+                            <img src="img/iconReal.svg" >
                         </span>
                         <span class="text">Réalisation</span>
                     </a>
@@ -648,7 +648,7 @@ session_start();
                 <li class="list">
                     <a onclick="changePage(6)">
                         <span class="icon">
-                            <img src="../img/iconFaq.svg" >
+                            <img src="img/iconFaq.svg" >
                         </span>
                         <span class="text">F.A.Q.</span>
                     </a>
@@ -723,6 +723,31 @@ session_start();
             behavior:'smooth'
         });
     })
+
+    // function carousel(hide) {
+    //     if (hide==true) {
+    //
+    //         $("#Carousel").removeClass().addClass("d-none")
+    //         $("#accordion2").removeClass().addClass("accordion d-block bg-dark")
+    //         $("#pageSite").removeClass().addClass('container-fluid p-0 d-sm-block  min-vh-100 d-lg-block d-xl-flex')
+    //
+    //     }
+    //     if (hide==false){
+    //         $("#pageSite, #accordion2").removeClass().addClass('d-none')
+    //         $("#Carousel").addClass('container-fluid p-0 bg-dark min-vh-100 d-flex justify-content-center')
+    //     }
+    // }
+
+
+    $(".carousel-item").on('mouseover',function () {
+        let getid= $(this).children(':first').attr('id');
+        $("#"+getid).show()
+        $(this).on('mouseout',function () {
+            $("#"+getid).hide()
+        })
+    })
+
 </script>
+
 </body>
 </html>

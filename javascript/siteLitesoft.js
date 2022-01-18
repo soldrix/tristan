@@ -31,11 +31,11 @@ function clearColor(){
     $('#Equipe').removeClass().addClass(btnRealisation)
     $('#Reference').removeClass().addClass(btnReference)
     $('#FAQ').removeClass().addClass(btnFaq)
-    $('#imgPrestation').attr('src', "../img/presta.svg")
-    $('#imgReference').attr('src', "../img/refs.svg")
-    $('#imgRealisation').attr('src', "../img/reals.svg")
-    $('#imgEquipe').attr('src', "../img/equipe.svg")
-    $('#imgFAQ').attr('src', "../img/faq.svg")
+    $('#imgPrestation').attr('src', "img/presta.svg")
+    $('#imgReference').attr('src', "img/refs.svg")
+    $('#imgRealisation').attr('src', "img/reals.svg")
+    $('#imgEquipe').attr('src', "img/equipe.svg")
+    $('#imgFAQ').attr('src', "img/faq.svg")
 }
 
 function changeColor(color){
@@ -43,24 +43,24 @@ function changeColor(color){
     if (color==2){
         document.getElementById('prestation').className="btn btn-dark w-100  mt-3 mb-3 pl-5 pr-3";
 
-        $('#imgPrestation').attr('src', "../img/prestan.svg")
+        $('#imgPrestation').attr('src', "img/prestan.svg")
     }
     if (color==3){
         document.getElementById('Reference').className="btn btn-dark w-100  mt-3 mb-3 pl-5 pr-3";
 
-        $('#imgReference').attr('src', "../img/refsn.svg")
+        $('#imgReference').attr('src', "img/refsn.svg")
     }
     if (color==4){
         document.getElementById('Equipe').className="btn btn-dark w-100  mt-3 mb-3 pl-5 pr-3";
-        $('#imgEquipe').attr('src', "../img/equipen.svg")
+        $('#imgEquipe').attr('src', "img/equipen.svg")
     }
     if (color==5){
         document.getElementById('Realisation').className="btn btn-dark w-100  mt-3 mb-3 pl-5 pr-3";
-        $('#imgRealisation').attr('src', "../img/realsn.svg")
+        $('#imgRealisation').attr('src', "img/realsn.svg")
     }
     if (color==6){
         document.getElementById('FAQ').className="btn btn-dark w-100  mt-3 mb-3 pl-5 pr-3";
-        $('#imgFAQ').attr('src', "../img/faqn.svg")
+        $('#imgFAQ').attr('src', "img/faqn.svg")
     }
 }
 
