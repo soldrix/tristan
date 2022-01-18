@@ -10,11 +10,8 @@ session_start();
     <title>Litesoft</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="nanoscroller.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/css/nanoscroller.min.css">
+    <link rel="stylesheet" href="css/nanoscroller.css">
     <style>
         :root{
             --primarycolor:#00354A;
@@ -120,7 +117,7 @@ session_start();
         }
     </style>
 </head>
-<body class="nano-content">
+<body class="nano-content p-0">
 <div class="container-fluid p-0  d-lg-flex">
     <nav  class="navbar  navbar-expand-lg navbar-light sticky-top d-flex d-lg-none d-xl-none flex-row justify-content-between" style="background-color: var(--secondarycolor)">
         <a class="navbar-brand" href="#"><img class="img-fluid w-50" src="img/logolitesoft.svg" alt=""></a>
@@ -315,6 +312,7 @@ session_start();
 
         <div id="Realisation" class="col-11 d-flex flex-column p-2 align-self-center mb-2" style="background-color: #0b4358">
             <h1 class="text-light">Nos réalisation</h1>
+
             <div class="col-auto border border-dark rounded p-0 mb-2">
                 <div id="carousel1" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -364,9 +362,6 @@ session_start();
                     </button>
                 </div>
             </div>
-
-
-
 
             <div class="col-auto border border-dark rounded p-0">
                 <div id="carousel2" class="carousel slide" data-ride="carousel">
@@ -428,23 +423,23 @@ session_start();
                     </p>
                 </div>
                 <div class="col-auto col-sm-auto col-md-auto col-lg-8 col-xl-8 d-flex justify-content-center py-3 px-4">
-                    <div class="d-flex flex-column pt-5" >
+                    <div class="d-flex flex-column justify-content-center" >
                         <img class="my-2 img-fluid" src="img/perso.png" alt="">
-                        <img class="my-2 img-fluid" src="img/perso.png" alt="">
-                        <img class="my-2 img-fluid" src="img/perso.png" alt="">
+                        <img class="my-2 img-fluid" src="img/perso2.png" alt="">
+                        <img class="my-2 img-fluid" src="img/perso3.png" alt="">
                     </div>
                     <div class="d-flex flex-column mx-3">
                         <img class="my-2 img-fluid" src="img/perso.png" alt="">
-                        <img class="my-2 img-fluid" src="img/perso.png" alt="">
-                        <img class="my-2 img-fluid" src="img/perso.png" alt="">
+                        <img class="my-2 img-fluid" src="img/perso2.png" alt="">
+                        <img class="my-2 img-fluid" src="img/perso3.png" alt="">
                         <img class="my-2 img-fluid" src="img/perso.png" alt="">
 
                     </div>
-                    <div class="d-flex flex-column justify-content-end pt-5">
+                    <div class="d-flex flex-column justify-content-end pt-5 mt-5">
+                            <img class="my-2 img-fluid" src="img/perso2.png" alt="">
+                            <img class="my-2 img-fluid" src="img/perso3.png" alt="">
                             <img class="my-2 img-fluid" src="img/perso.png" alt="">
-                            <img class="my-2 img-fluid" src="img/perso.png" alt="">
-                            <img class="my-2 img-fluid" src="img/perso.png" alt="">
-                            <img class="my-2 img-fluid" src="img/perso.png" alt="">
+                            <img class="my-2 img-fluid" src="img/perso2.png" alt="">
                     </div>
                 </div>
             </div>
@@ -665,10 +660,9 @@ session_start();
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
 
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/javascripts/jquery.nanoscroller.min.js"></script>
 <script type="text/javascript">
-
+    $(".nano").nanoScroller();
 
     let myChart = document.getElementById('myChart').getContext('2d');
 
