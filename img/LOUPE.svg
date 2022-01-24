@@ -1,1 +1,5 @@
-<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220"><defs><style>.cls-1{fill:#1d1d1b;opacity:0.3;}.cls-2{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}.cls-3{fill:#fff;}</style></defs><rect class="cls-1" width="400" height="220"/><circle class="cls-2" cx="195.59" cy="103.46" r="16.05"/><rect class="cls-3" x="210.88" y="112.46" width="5.48" height="20.59" transform="translate(-26.36 178.54) rotate(-42.97)"/></svg>
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" d="M1280 0H0V720H1280V0Z" fill="#1D1D1B"/>
+<path d="M625.887 391.123C654.253 391.123 677.248 367.605 677.248 338.597C677.248 309.587 654.253 286.069 625.887 286.069C597.521 286.069 574.528 309.587 574.528 338.597C574.528 367.605 597.521 391.123 625.887 391.123Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M667.542 370.976L654.712 383.2L699.623 432.507L712.454 420.283L667.542 370.976Z" fill="white"/>
+</svg>

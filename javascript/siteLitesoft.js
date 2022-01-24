@@ -1,70 +1,57 @@
-const list =document.querySelectorAll('.list');
-function activeLink(){
-    list.forEach((item)=>
-        item.classList.remove('active'));
-    this.classList.add('active');
+
+function clearPage(){
+    $('#Home').removeClass('d-flex').addClass('d-none')
+    $('#Prestation').removeClass('d-flex').addClass('d-none')
+    $('#Reference').removeClass('d-flex').addClass('d-none')
+    $('#Realisation').removeClass('d-flex').addClass('d-none')
+    $('#Equipe').removeClass('d-flex').addClass('d-none')
+    $('#Faq').removeClass('d-flex').addClass('d-none')
 }
-list.forEach((item)=>
-    item.addEventListener('click',activeLink));
-
-
-$('#collapse2').on('shown.bs.collapse',function () {
-    document.querySelector('.textmention').scrollIntoView({
-        behavior:'smooth'
-    });
-})
 
 function changePage(page){
 
-    if(page==0){
-        clearPage()
-        $('#pageContact').removeClass().addClass(contact)
-    }
-
     if (page==1){
         clearPage()
-        clearColor()
-        // document.getElementById('pageHome').className=home;
-        $('#pageHome').removeClass().addClass(home)
+
+        $('#Home').removeClass('d-none').addClass('d-flex')
     }
     if (page==2){
         clearPage()
-        changeColor(2)
-        // document.getElementById('pagePrestation').className=prestation;
-        $('#pagePrestation').removeClass().addClass(prestation)
-        $('#collapseOne').collapse("hide")
+
+
+        $('#Prestation').removeClass('d-none').addClass('d-flex')
+
 
 
     }
     if (page==3){
         clearPage()
-        changeColor(3)
-        // document.getElementById('pageReference').className=reference;
-        $('#pageReference').removeClass().addClass(reference)
-        $('#collapseOne').collapse("hide")
+
+
+        $('#Reference').removeClass('d-none').addClass('d-flex')
+
     }
     if (page==4){
         clearPage()
-        changeColor(4)
-        // document.getElementById('pageEquipe').className=equipe;
-        $('#pageEquipe').removeClass().addClass(equipe)
-        $('#collapseOne').collapse("hide")
+
+
+        $('#Equipe').removeClass('d-none').addClass('d-flex')
+
 
     }
     if (page==5){
         clearPage()
-        changeColor(5)
-        // document.getElementById('pageRealisation').className=realisation;
-        $('#pageRealisation').removeClass().addClass(realisation)
-        $('#collapseOne').collapse("hide")
+
+
+        $('#Realisation').removeClass('d-none').addClass('d-flex')
+
 
     }
     if (page==6){
         clearPage()
-        changeColor(6)
-        $('#pageFaq').removeClass().addClass(faq)
-        // document.getElementById('pageFaq').className=faq;
-        $('#collapseOne').collapse("hide")
+        $('#Faq').removeClass('d-none').addClass('d-flex')
+
+
 
     }
 }

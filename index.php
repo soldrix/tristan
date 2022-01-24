@@ -135,29 +135,29 @@ session_start();
 
     <!--    nav-bar left-->
     <nav class="col-lg-1 position-sticky d-none d-lg-flex flex-column pt-1 max-vh-100 justify-content-center" style="background-color: var(--secondarycolor)">
-        <a class="mt-3 align-self-center" href="#"><img src="img/onlyLogo.svg" alt="Logo Litesoft"></a>
+        <a class="mt-3 align-self-center" href="#" onclick="changePage(1)"><img src="img/onlyLogo.svg" alt="Logo Litesoft"></a>
         <ul class="list-unstyled h-100 d-flex flex-column justify-content-center align-self-center" style="width: 50px">
             <li class="my-3">
-                <a href="#"><img src="img/iconPresta.svg" alt="Préstation" ></a>
+                <a href="#" onclick="changePage(2)"><img src="img/iconPresta.svg" alt="Préstation" ></a>
             </li>
             <li class="my-3">
-                <a href="#"><img  src="img/iconReal.svg" alt="Réalisation" ></a>
+                <a href="#" onclick="changePage(5)"><img  src="img/iconReal.svg" alt="Réalisation" ></a>
             </li>
             <li class="my-3">
-                <a href="#"><img src="img/iconEquipe.svg" alt="Equipe" ></a>
+                <a href="#" onclick="changePage(4)"><img src="img/iconEquipe.svg" alt="Equipe" ></a>
             </li>
             <li class="my-3">
-                <a href="#"><img src="img/iconRef.svg" alt="Référence" ></a>
+                <a href="#" onclick="changePage(3)"><img src="img/iconRef.svg" alt="Référence" ></a>
             </li>
             <li class="my-3">
-                <a href="#"><img src="img/iconFaq.svg" alt="F.A.Q." ></a>
+                <a href="#" onclick="changePage(6)"><img src="img/iconFaq.svg" alt="F.A.Q." ></a>
             </li>
         </ul>
     </nav>
 
     <div id="test" class="nano  col-lg-9 d-flex flex-column p-0" style="height: 100vh">
         <div id="page" class="nano-content d-flex flex-column" style="background-color: var(--primarycolor);">
-            <div id="pageHome" class="col-11 d-flex d-sm-flex  flex-column p-1 align-self-center ">
+            <div id="Home" class="col-11 d-flex flex-column p-1 align-self-center ">
                 <div class="col-auto mb-4 p-0 d-none d-lg-flex">
                     <img src="img/groslitesoft.svg" alt="" style="width: 37.5%">
                 </div>
@@ -230,15 +230,14 @@ session_start();
                 </div>
             </div>
 
-
-            <div id="Prestations" class="col-11 d-flex flex-column p-1 align-self-center mb-2" style="background-color: #0b4358">
+            <div id="Prestation" class="col-11 d-none flex-column p-1 align-self-center my-2" style="background-color: #0b4358">
                 <div class="col-auto">
                     <h1 class="text-light" >
                         Nos prestations
                     </h1>
                     <div class="row">
                         <div class="col-4 d-flex justify-content-center">
-                            <img class="img-fluid my-3" src="img/icoCloud.svg" alt="">
+                            <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoCloud.svg" alt="">
                         </div>
                         <div class="col-8 d-flex justify-content-center flex-column">
                             <p class="font-weight-bold text-light TitrePresta">Cloud</p>
@@ -252,7 +251,7 @@ session_start();
                     </div>
                     <div class="row">
                         <div class="col-4 d-flex justify-content-center">
-                            <img class="img-fluid my-3" src="img/icoDesktop.svg" alt="">
+                            <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoDesktop.svg" alt="">
                         </div>
                         <div class="col-8 d-flex justify-content-center flex-column">
                             <p class="font-weight-bold text-light TitrePresta">Desktop</p>
@@ -265,7 +264,7 @@ session_start();
                     </div>
                     <div class="row">
                         <div class="col-4 d-flex justify-content-center">
-                            <img class="img-fluid my-3" src="img/icoMobile.svg" alt="">
+                            <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoMobile.svg" alt="">
                         </div>
                         <div class="col-8 d-flex justify-content-center flex-column">
                             <p class="font-weight-bold text-light TitrePresta">Smartphones et tablettes</p>
@@ -277,7 +276,7 @@ session_start();
                     </div>
                     <div class="row">
                         <div class="col-4 d-flex justify-content-center">
-                            <img class="img-fluid my-3" src="img/icoReseaux.svg" alt="">
+                            <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoReseaux.svg" alt="">
                         </div>
                         <div class="col-8 d-flex justify-content-center flex-column">
                             <p class="font-weight-bold text-light TitrePresta">Systèmes et réseaux</p>
@@ -289,7 +288,7 @@ session_start();
                     </div>
                     <div class="row">
                         <div class="col-4 d-flex justify-content-center ">
-                            <img class="img-fluid my-3" src="img/icoUltraMobile.svg" alt="">
+                            <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoUltraMobile.svg" alt="">
                         </div>
                         <div class="col-8 d-flex justify-content-center flex-column">
                             <p class="font-weight-bold text-light TitrePresta">Ultra mobilité</p>
@@ -305,110 +304,117 @@ session_start();
 
                 </div>
             </div>
-            <div id="Realisation" class="col-11 d-flex flex-column p-2 align-self-center mb-2" style="background-color: #0b4358">
-                <h1 class="text-light">Nos réalisation</h1>
-
-                <div class="col-auto border border-dark rounded p-0 mb-2">
-                    <div id="carousel1" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel1" data-slide-to="1"></li>
-                            <li data-target="#carousel1" data-slide-to="2"></li>
-                        </ol>
-                        <div  class="carousel-inner">
-                            <div class="carousel-item active" data-interval="10000">
-                                <img id="loupe1" class="position-absolute" src="img/LOUPE.svg"  onclick="carousel(false)">
-                                <img id="lol" src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
-                                <div class="carousel-caption d-block d-md-none">
-                                    <h5>First slide label</h5>
+            <div id="Realisation" class="col-11 d-none flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row p-2 align-self-center my-2" style="background-color: #0b4358">
+                <div class="col-auto col-sm-auto col-md-auto col-lg-5 col-xl-5">
+                    <h1 class="text-light">Nos réalisation</h1>
+                    <p>sdljfhsdhwbwf,nbl sldhfgx dl isudgf odlivugwodfi ugwxlgv</p>
+                </div>
+                <div class="col-auto col-sm-auto col-md-auto col-lg-7 col-xl-7 d-flex flex-column justify-content-center">
+                    <div class="col-auto border border-dark rounded p-0 mb-2">
+                        <div id="carousel1" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel1" data-slide-to="1"></li>
+                                <li data-target="#carousel1" data-slide-to="2"></li>
+                            </ol>
+                            <div  class="carousel-inner">
+                                <div class="carousel-item active" data-interval="10000">
+                                    <img id="loupe1" class="position-absolute h-100 w-100" src="img/LOUPE.svg"  onclick="carousel(false)">
+                                    <img id="lol" src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
+                                    <div class="carousel-caption d-block d-md-none">
+                                        <h5>First slide label</h5>
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="m-0">First slide label</h5>
+                                    </div>
                                 </div>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="m-0">First slide label</h5>
+                                <div  class="carousel-item" data-interval="2000">
+                                    <img id="loupe2" class="position-absolute h-100 w-100" src="img/LOUPE.svg" onclick="carousel(false)">
+                                    <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
+                                    <div class="carousel-caption d-block d-md-none">
+                                        <h5>First slide label</h5>
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="m-0">First slide label</h5>
+                                    </div>
+                                </div>
+                                <div  class="carousel-item">
+                                    <img id="loupe3" class="position-absolute h-100 w-100" src="img/LOUPE.svg"  onclick="carousel(false)">
+                                    <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
+                                    <div class="carousel-caption d-block d-md-none">
+                                        <h5>First slide label</h5>
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="m-0">First slide label</h5>
+                                    </div>
                                 </div>
                             </div>
-                            <div  class="carousel-item" data-interval="2000">
-                                <img id="loupe2" class="position-absolute" src="img/LOUPE.svg" onclick="carousel(false)">
-                                <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
-                                <div class="carousel-caption d-block d-md-none">
-                                    <h5>First slide label</h5>
-                                </div>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="m-0">First slide label</h5>
-                                </div>
-                            </div>
-                            <div  class="carousel-item">
-                                <img id="loupe3" class="position-absolute" src="img/LOUPE.svg"  onclick="carousel(false)">
-                                <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
-                                <div class="carousel-caption d-block d-md-none">
-                                    <h5>First slide label</h5>
-                                </div>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="m-0">First slide label</h5>
-                                </div>
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-target="#carousel1" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-target="#carousel1" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-target="#carousel1" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-target="#carousel1" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </button>
                     </div>
+                    <div class="col-auto border border-dark rounded p-0">
+                        <div id="carousel2" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel2" data-slide-to="1"></li>
+                                <li data-target="#carousel2" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="10000">
+                                    <img id="loupe4" class="position-absolute h-100 w-100" src="img/LOUPE.svg"  onclick="carousel(false)">
+                                    <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
+                                    <div class="carousel-caption d-block d-md-none">
+                                        <h5>First slide label</h5>
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="m-0">First slide label</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-interval="2000">
+                                    <img id="loupe5" class="position-absolute h-100 w-100" src="img/LOUPE.svg"  onclick="carousel(false)">
+                                    <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
+                                    <div class="carousel-caption d-block d-md-none">
+                                        <h5>First slide label</h5>
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="m-0">First slide label</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img id="loupe6" class="position-absolute h-100 w-100" src="img/LOUPE.svg"  onclick="carousel(false)">
+                                    <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
+                                    <div class="carousel-caption d-block d-md-none">
+                                        <h5>First slide label</h5>
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="m-0">First slide label</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-target="#carousel2" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-target="#carousel2" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="col-auto border border-dark rounded p-0">
-                    <div id="carousel2" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel2" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel2" data-slide-to="1"></li>
-                            <li data-target="#carousel2" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-interval="10000">
-                                <img id="loupe4" class="position-absolute" src="img/LOUPE.svg"  onclick="carousel(false)">
-                                <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
-                                <div class="carousel-caption d-block d-md-none">
-                                    <h5>First slide label</h5>
-                                </div>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="m-0">First slide label</h5>
-                                </div>
-                            </div>
-                            <div class="carousel-item" data-interval="2000">
-                                <img id="loupe5" class="position-absolute" src="img/LOUPE.svg"  onclick="carousel(false)">
-                                <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
-                                <div class="carousel-caption d-block d-md-none">
-                                    <h5>First slide label</h5>
-                                </div>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="m-0">First slide label</h5>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img id="loupe6" class="position-absolute" src="img/LOUPE.svg"  onclick="carousel(false)">
-                                <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
-                                <div class="carousel-caption d-block d-md-none">
-                                    <h5>First slide label</h5>
-                                </div>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="m-0">First slide label</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-target="#carousel2" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-target="#carousel2" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </button>
-                    </div>
-                </div>
+
+
             </div>
-            <div id="Equipe" class="col-11 d-flex flex-column p-2 align-self-center mb-2" style="background-color: #0b4358">
+            <div id="Equipe" class="col-11 d-none flex-column p-2 align-self-center my-2" style="background-color: #0b4358">
 
                 <div class="col-auto d-flex flex-column  flex-sm-column flex-md-column flex-lg-row flex-xl-row justify-content-center">
                     <div class="col-auto d-flex flex-column">
@@ -439,47 +445,48 @@ session_start();
                     </div>
                 </div>
             </div>
-            <div id="pageFaq" class="col-11 p-3 flex-column d-flex align-self-center mb-2" style="background-color: #0b4358">
+            <div id="Faq" class="col-11  d-none align-self-center my-2 justify-content-center" style="background-color: #0b4358">
+                <div class="col-10 p-2">
+                    <h2 class="text-center mb-3 font-weight-bold text-capitalize text-light">F.A.Q</h2>
+                    <div class="col-auto d-flex flex-column">
+                        <div class="accordion mb-2" id="accordionFaq">
+                            <div class="card border-0">
+                                <div class="card-header" id="headingFaq" style="background-color: #5da6c1">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-center text-decoration-none font-weight-bold text-light" type="button" data-toggle="collapse" data-target="#collapseFaq" aria-expanded="true" aria-controls="collapseFaq" >
+                                            theme de la question
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFaq" class="collapse" aria-labelledby="headingFaq" data-parent="#accordionFaq">
+                                    <div class="card-body">
+                                        <div class="accordion mb-2" id="accordionFaq1">
+                                            <div class="card border-0">
+                                                <div class="card-header" id="headingFaq1" style="background-color: #5da6c1">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block text-left text-decoration-none font-weight-bold text-light" type="button" data-toggle="collapse" data-target="#collapseFaq1" aria-expanded="true" aria-controls="collapseFaq1" >
+                                                            question 1
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                                <div id="collapseFaq1" class="collapse" aria-labelledby="headingFaq1" data-parent="#accordionFaq1">
+                                                    <div class="card-body">
+                                                        <p class="font-weight-normal text-center">
+                                                            Créée en 2011, Litesoft est une équipe de développeurs soudée et dynamique répartie sur deux sites :   l’un dans l’Oise et l'autre dans l’Hérault.
+                                                            <br>
 
-                <h2 class="text-center mb-3 font-weight-bold text-capitalize ">Questions fréquemment posées :</h2>
-                <div class="col-auto">
-                    <div class="accordion mb-2" id="accordionFaq">
-                        <div class="card">
-                            <div class="card-header" id="headingFaq">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseFaq" aria-expanded="true" aria-controls="collapseFaq">
-                                        theme de la question
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseFaq" class="collapse" aria-labelledby="headingFaq" data-parent="#accordionFaq">
-                                <div class="card-body">
-                                    <div class="accordion mb-2" id="accordionFaq1">
-                                        <div class="card">
-                                            <div class="card-header" id="headingFaq1">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link btn-block text-left text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseFaq1" aria-expanded="true" aria-controls="collapseFaq1">
-                                                        question 1
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapseFaq1" class="collapse" aria-labelledby="headingFaq1" data-parent="#accordionFaq1">
-                                                <div class="card-body">
-                                                    <p class="font-weight-normal text-center">
-                                                        Créée en 2011, Litesoft est une équipe de développeurs soudée et dynamique répartie sur deux sites :   l’un dans l’Oise et l'autre dans l’Hérault.
-                                                        <br>
+                                                            Nous sommes convaincus que c’est l’informatique qui doit être au service des utilisateurs et non l’inverse.
+                                                            En créant des applications optimisées, adaptées à vos exigences et à vos contraintes, nous vous aiderons à améliorer votre productivité.
+                                                            Quelque soit votre domaine d’activité, nous imaginons avec vous les outils informatiques en cohérence avec votre métier en respectant le process suivant :
 
-                                                        Nous sommes convaincus que c’est l’informatique qui doit être au service des utilisateurs et non l’inverse.
-                                                        En créant des applications optimisées, adaptées à vos exigences et à vos contraintes, nous vous aiderons à améliorer votre productivité.
-                                                        Quelque soit votre domaine d’activité, nous imaginons avec vous les outils informatiques en cohérence avec votre métier en respectant le process suivant :
-
-                                                        <br>
-                                                        Étude et compréhension de votre demande en rencontrant les acteurs concernés
-                                                        Rédaction d’un cahier des charges détaillant les fonctionnalités qui seront développées
-                                                        Création de votre outil avec des phases de validation de votre part
-                                                        Périodes de tests continues en interne puis avec vous avant la mise en production
-                                                        Mise en production de la solution avec accompagnement en fonction de vos besoins (formation, paramétrage…)
-                                                    </p>
+                                                            <br>
+                                                            Étude et compréhension de votre demande en rencontrant les acteurs concernés
+                                                            Rédaction d’un cahier des charges détaillant les fonctionnalités qui seront développées
+                                                            Création de votre outil avec des phases de validation de votre part
+                                                            Périodes de tests continues en interne puis avec vous avant la mise en production
+                                                            Mise en production de la solution avec accompagnement en fonction de vos besoins (formation, paramétrage…)
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -488,131 +495,15 @@ session_start();
                             </div>
                         </div>
                     </div>
-                    <div class="accordion mb-2" id="accordionFaq2">
-                        <div class="card">
-                            <div class="card-header" id="headingFaq2">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseFaq2" aria-expanded="true" aria-controls="collapseFaq2">
-                                        theme de la question
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseFaq2" class="collapse" aria-labelledby="headingFaq2" data-parent="#accordionFaq2">
-                                <div class="card-body">
-                                    <div class="accordion nb-2" id="accordionFaq3">
-                                        <div class="card">
-                                            <div class="card-header" id="headingFaq3">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link btn-block text-left text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseFaq3" aria-expanded="true" aria-controls="collapseFaq3">
-                                                        question 2
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapseFaq3" class="collapse" aria-labelledby="headingFaq3" data-parent="#accordionFaq3">
-                                                <div class="card-body">
-                                                    <p class="font-weight-normal text-center">
-                                                        Créée en 2011, Litesoft est une équipe de développeurs soudée et dynamique répartie sur deux sites :   l’un dans l’Oise et l'autre dans l’Hérault.
-                                                        <br>
 
-                                                        Nous sommes convaincus que c’est l’informatique qui doit être au service des utilisateurs et non l’inverse.
-                                                        En créant des applications optimisées, adaptées à vos exigences et à vos contraintes, nous vous aiderons à améliorer votre productivité.
-                                                        Quelque soit votre domaine d’activité, nous imaginons avec vous les outils informatiques en cohérence avec votre métier en respectant le process suivant :
-
-                                                        <br>
-                                                        Étude et compréhension de votre demande en rencontrant les acteurs concernés
-                                                        Rédaction d’un cahier des charges détaillant les fonctionnalités qui seront développées
-                                                        Création de votre outil avec des phases de validation de votre part
-                                                        Périodes de tests continues en interne puis avec vous avant la mise en production
-                                                        Mise en production de la solution avec accompagnement en fonction de vos besoins (formation, paramétrage…)
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion mb-2" id="accordionFaq4">
-                        <div class="card">
-                            <div class="card-header" id="headingFaq4">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseFaq4" aria-expanded="true" aria-controls="collapseFaq4">
-                                        theme de la question 3
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseFaq4" class="collapse" aria-labelledby="headingFaq4" data-parent="#accordionFaq4">
-                                <div class="card-body">
-                                    <div class="accordion mb-2" id="accordionFaq5">
-                                        <div class="card">
-                                            <div class="card-header" id="headingFaq5">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link btn-block text-left text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseFaq5" aria-expanded="true" aria-controls="collapseFaq5">
-                                                        question
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapseFaq5" class="collapse" aria-labelledby="headingFaq5" data-parent="#accordionFaq5">
-                                                <div class="card-body">
-                                                    <p class="font-weight-normal text-center">
-                                                        Créée en 2011, Litesoft est une équipe de développeurs soudée et dynamique répartie sur deux sites :   l’un dans l’Oise et l'autre dans l’Hérault.
-                                                        <br>
-
-                                                        Nous sommes convaincus que c’est l’informatique qui doit être au service des utilisateurs et non l’inverse.
-                                                        En créant des applications optimisées, adaptées à vos exigences et à vos contraintes, nous vous aiderons à améliorer votre productivité.
-                                                        Quelque soit votre domaine d’activité, nous imaginons avec vous les outils informatiques en cohérence avec votre métier en respectant le process suivant :
-
-                                                        <br>
-                                                        Étude et compréhension de votre demande en rencontrant les acteurs concernés
-                                                        Rédaction d’un cahier des charges détaillant les fonctionnalités qui seront développées
-                                                        Création de votre outil avec des phases de validation de votre part
-                                                        Périodes de tests continues en interne puis avec vous avant la mise en production
-                                                        Mise en production de la solution avec accompagnement en fonction de vos besoins (formation, paramétrage…)
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion mb-2" id="accordionFaq6">
-                                        <div class="card">
-                                            <div class="card-header" id="headingFaq6">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link btn-block text-left text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseFaq6" aria-expanded="true" aria-controls="collapseFaq6">
-                                                        question
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapseFaq6" class="collapse" aria-labelledby="headingFaq6" data-parent="#accordionFaq6">
-                                                <div class="card-body">
-                                                    <p class="font-weight-normal text-center">
-                                                        Créée en 2011, Litesoft est une équipe de développeurs soudée et dynamique répartie sur deux sites :   l’un dans l’Oise et l'autre dans l’Hérault.
-                                                        <br>
-
-                                                        Nous sommes convaincus que c’est l’informatique qui doit être au service des utilisateurs et non l’inverse.
-                                                        En créant des applications optimisées, adaptées à vos exigences et à vos contraintes, nous vous aiderons à améliorer votre productivité.
-                                                        Quelque soit votre domaine d’activité, nous imaginons avec vous les outils informatiques en cohérence avec votre métier en respectant le process suivant :
-
-                                                        <br>
-                                                        Étude et compréhension de votre demande en rencontrant les acteurs concernés
-                                                        Rédaction d’un cahier des charges détaillant les fonctionnalités qui seront développées
-                                                        Création de votre outil avec des phases de validation de votre part
-                                                        Périodes de tests continues en interne puis avec vous avant la mise en production
-                                                        Mise en production de la solution avec accompagnement en fonction de vos besoins (formation, paramétrage…)
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
-            </div>
 
-            <div id="Reference" class="col-11 d-flex flex-column p-2 align-self-center mb-2" style="background-color: #0b4358">
+
+
+
+            </div>
+            <div id="Reference" class="col-11 d-none flex-column p-2 align-self-center my-2" style="background-color: #0b4358">
                 <h1 class="text-light">Nos référence</h1>
                 <div class="col-auto d-flex flex-row flex-sm-row flex-md-column flex-lg-column flex-xl-column justify-content-center mb-5">
 
@@ -655,11 +546,7 @@ session_start();
                 </div>
             </div>
 
-
-
-
-
-            <div class="accordion d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex w-100 mw-100" id="accordion2" style="background-color:var(--secondarycolor)">
+            <div class="accordion d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex w-100 mw-100 mt-2" id="accordion2" style="background-color:var(--secondarycolor)">
                 <div class="card w-100" id="colorContact" style="background-color:var(--secondarycolor)">
                     <div id="heading2" class="w-100 p-0" style="background-color:var(--secondarycolor)">
                         <button id="btnMention" class="w-100 border-0  pl-5 pr-3 text-light" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2" style="background-color:var(--secondarycolor)">
@@ -695,12 +582,12 @@ session_start();
                         <ul>
 
                             <li class="list active">
-                                <a onclick="changePage(0)">
+                                <a onclick="changePage(1)">
                         <span class="icon">
-                            <img src="img/iconContact.svg" alt="btn Contact" >
+                            <img src="img/iconContact.svg" alt="btn home" >
 
                         </span>
-                                    <span class="text">Contact</span>
+                                    <span class="text">Home</span>
                                 </a>
                             </li>
                             <li class="list">
@@ -756,10 +643,10 @@ session_start();
     <!--    profil-->
     <div class="col-lg-2 position-sticky max-vh-100 d-lg-flex d-xl-flex flex-column p-0 d-md-none d-sm-none d-none" style="background-color: #0B4358">
 
-        <div class="col-auto  px-0 align-self-center" >
+        <div class="col-auto  px-0 align-self-center d-flex flex-column" >
             <p class="text-light mb-0 mt-2">Profil</p>
             <!--            image profil-->
-            <div class="d-flex justify-content-center mb-3" style="background-image: url('img/singe.svg');background-repeat: no-repeat;object-fit: cover;width: 150px;height: 150px">
+            <div class="d-flex justify-content-center mb-3 align-self-center" style="background-image: url('img/singe.svg');background-repeat: no-repeat;object-fit: cover;width: 150px;height: 150px">
                 <div class="align-self-center p-0"  style="background: white url('img/jean.jpg') no-repeat center center;border-radius: 100%;background-size: cover ;width: 130px;height: 130px;">
                 </div>
             </div>
@@ -886,6 +773,6 @@ session_start();
     })
     $(".nano").nanoScroller();
 </script>
-<script src="javascript/litesoft.js"></script>
+<script src="javascript/siteLitesoft.js"></script>
 </body>
 </html>
