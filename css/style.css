@@ -22,6 +22,7 @@
 
 .fond{
     height: 67%;
+    min-height: 60%;
     position: absolute;
     bottom: 0;
     background: #ffffff;
@@ -95,11 +96,11 @@
     letter-spacing: 0.05em;
     transition: 0.5s;
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(15px);
 }
 .navigation ul li.active a .text{
     opacity: 1;
-    transform: translateY(20px);
+    transform: translateY(15px);
 }
 .indicator
 {
@@ -176,34 +177,7 @@
     cursor: pointer;
 }
 
-.search {
-    width: 100%;
-    display: flex;
-}
-
-.searchTerm {
-    width: 100%;
-    border: 3px solid #00B4CC;
-    border-right: none;
-    border-radius: 5px 0 0 5px;
-    color: #9DBFAF;
-}
-
-.searchTerm:focus{
-    color: #00B4CC;
-}
-
-.searchButton {
-    width: 40px;
-    height: 36px;
-    border: 1px solid #00B4CC;
-    background: #00B4CC;
-    text-align: center;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 20px;
-}
-.wrap{
-    width: 30%;
-}
+.nano { background: #bba; height: 100vh; }
+.nano .nano-content { padding: 1px; }
+.nano .nano-pane   { background: #062b3b; }
+.nano .nano-pane .nano-slider { background: #687e87;}
