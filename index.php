@@ -63,10 +63,10 @@ session_destroy();
                 font-family: 'Baloo 2', cursive;
             }
             p{
-                font-size: 25px;
+                font-size: 20px;
             }
             h1{
-                font-size: 35px;
+                font-size: 25px;
             }
             .col-xl-7-5{
                 flex: 0 0 62.555555%;
@@ -81,6 +81,7 @@ session_destroy();
         @media (min-width: 991px) and (max-width: 1200px){
             h1{
                 font-family: 'Baloo 2', cursive;
+                font-size: 20px;
             }
             p{
                 font-size: 15px;
@@ -149,6 +150,17 @@ session_destroy();
                 top: 56px;
             }
         }
+
+            #nav-left{
+                max-height: 100vh;
+                min-height: 100vh;
+                height: 100vh;
+            }
+            #nav-profil{
+                max-height: 100vh;
+                min-height: 100vh;
+                height: 100vh;
+            }
 
     </style>
 </head>
@@ -345,14 +357,14 @@ session_destroy();
 
 
     <!--    nav-bar left-->
-    <nav class="col-lg-1 position-sticky d-none d-lg-flex flex-column pt-1 max-vh-100 justify-content-center" style="background-color: var(--secondarycolor)">
+    <nav id="nav-left" class="col-lg-1 position-sticky d-none d-lg-flex flex-column pt-1 max-vh-100  overflow-auto" style="background-color: var(--secondarycolor)">
 
         <ul class="list-unstyled d-flex flex-column justify-content-center align-self-center nav-left">
             <li class="d-flex justify-content-center h-100 w-100 px-2">
                 <a class="mt-3 align-self-center w-100 h-100" href="#" onclick="changePage(1)"><img class="w-100 h-100" src="img/onlyLogo.svg" alt="Logo Litesoft"></a>
             </li>
         </ul>
-        <ul class="list-unstyled h-100 d-flex flex-column justify-content-center align-self-center nav-left" style="width: 50%">
+        <ul class="list-unstyled d-flex flex-column justify-content-center align-self-center nav-left" style="width: 50%;position: inherit;top: 25%">
             <li class="my-3">
                 <a href="#" onclick="changePage(2)"><img id="Prestaw" src="img/iconPresta.svg" alt="Préstation" ></a>
             </li>
@@ -1014,7 +1026,7 @@ session_destroy();
     </div>
 
     <!--    profil-->
-    <div class="col-lg-2 position-sticky max-vh-100 d-lg-flex d-xl-flex flex-column p-0 d-md-none d-sm-none d-none" style="background-color: #0B4358">
+    <div id="nav-profil" class="col-lg-2 position-sticky max-vh-100 d-lg-flex d-xl-flex flex-column p-0 d-md-none d-sm-none d-none overflow-auto" style="background-color: #0B4358">
 
         <div class="col-auto  px-0 align-self-center d-flex flex-column" >
             <h1 class="text-light mb-0 mt-2">Profil</h1>
@@ -1068,6 +1080,7 @@ session_destroy();
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/javascripts/jquery.nanoscroller.min.js"></script>
 
 <script type="text/javascript">
+    alert($(window).height());
     let myChart = document.getElementById('myChart').getContext('2d');
 
     let massPopChart = new Chart(myChart,{
