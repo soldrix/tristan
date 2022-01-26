@@ -448,7 +448,7 @@ session_destroy();
                     <div id="Prestation" class="col-auto d-none flex-column p-1 align-self-center my-3" style="background-color: #0b4358">
 
                         <div class="col-auto d-flex flex-column">
-                            <h1 class="text-light d-flex d-sm-none d-md-flex d-lg-none" >
+                            <h1 class="text-light d-flex" >
                                 Nos prestations
                             </h1>
                             <div class="col-auto d-flex flex-column flex-sm-column flex-md-row flex-xl-row">
@@ -522,7 +522,7 @@ session_destroy();
                     </div>
                     <div id="Realisation" class="col-auto d-none flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row p-2 align-self-center my-2 w-100" style="background-color: #0b4358">
                         <div class="col-auto col-sm-auto col-md-auto col-lg-5 col-xl-5">
-                            <h1 class="text-light">Nos réalisation</h1>
+                            <h1 class="text-light">Nos réalisations</h1>
                             <p class="text-left">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Ut ut justo a libero auctor lobortis.
@@ -827,7 +827,7 @@ session_destroy();
 
                     </div>
                     <div id="Reference" class="col-auto d-none flex-column   p-2 align-self-center my-2" style="min-height:80%;">
-                        <h1 class="text-light">Nos référence</h1>
+                        <h1 class="text-light">Nos références</h1>
                             <div class="col-auto  d-flex flex-row flex-sm-row flex-md-column flex-lg-column flex-xl-column justify-content-center mb-5 p-0" >
 
                                 <div class="col-6 col-sm-6 col-md-auto col-lg-auto col-xl-auto d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row  p-0 mx-2" >
@@ -932,7 +932,7 @@ session_destroy();
                         <span class="icon">
                             <img src="img/iconReals.svg" alt="btn realisation">
                         </span>
-                                        <span class="text">Réalisation</span>
+                                        <span class="text">Réalisations</span>
                                     </a>
                                 </li>
                                 <li class="list">
@@ -975,7 +975,7 @@ session_destroy();
             </div>
             <!--            ligne séparation-->
             <div class="w-100" style="border-bottom: 1px solid #1C617B">
-                <p class="text-center" style="color: #52B8DD">Nom du monsieur</p>
+                <p class="text-center" style="color: #52B8DD">Jean</p>
             </div>
         </div>
 
