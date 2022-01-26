@@ -1,1 +1,6 @@
-<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115"><defs><style>.cls-1,.cls-2{fill:none;}.cls-2{stroke:#1b81c4;stroke-miterlimit:10;stroke-width:2px;}.cls-3{fill:#1b81c4;}</style></defs><rect class="cls-1" width="115" height="115"/><circle id="Ellipse_19" data-name="Ellipse 19" class="cls-2" cx="57.5" cy="57.81" r="56"/><path id="Tracé_51" data-name="Tracé 51" class="cls-3" d="M92.55,31.32H22.45A2.4,2.4,0,0,0,20,33.63v41.7a2.4,2.4,0,0,0,2.45,2.31H51.67v7.79H48.76v.87H66.24v-.87H63.33V77.64H92.55A2.39,2.39,0,0,0,95,75.33V33.63a2.4,2.4,0,0,0-2.45-2.31Zm.69,39.25H21.76V33.34H93.24Z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="1540" viewBox="0 0 1540 1540">
+  <g id="icoDesktop" transform="translate(19 19)">
+    <circle id="Ellipse_19" data-name="Ellipse 19" cx="750" cy="750" r="750" transform="translate(1 1)" fill="none" stroke="#0d7fc3" stroke-miterlimit="10" stroke-width="40"/>
+    <path id="Tracé_51" data-name="Tracé 51" d="M991.139,30.521H52.367A32.037,32.037,0,0,0,19.5,61.446V619.952a32.037,32.037,0,0,0,32.867,30.925H443.7V755.238H404.668v11.6H638.838v-11.6H599.81V650.931H991.139a32.037,32.037,0,0,0,32.867-30.925V61.5a32.037,32.037,0,0,0-32.867-30.925Zm9.241,525.705H43.126V57.589H1000.38Z" transform="translate(229.278 365.719)" fill="#0d7fc3"/>
+  </g>
+</svg>

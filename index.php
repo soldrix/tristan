@@ -24,9 +24,11 @@ session_destroy();
         /*plus que xl*/
         @media (min-width: 1600px){
             p{
-                font-size: 25px;
+                font-size: 30px;
             }
-
+            h1{
+                font-size: 40px;
+            }
             .col-xl-7-5{
                 flex: 0 0 62.555555%;
                 max-width: 62.555555%;
@@ -129,47 +131,61 @@ session_destroy();
     </style>
 </head>
 <body>
-<div class="container-fluid d-none p-0 flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row" id="Mention">
-    <nav class="col-lg-1 position-sticky d-none d-lg-flex flex-column pt-1 max-vh-100 justify-content-start vh-100" style="background-color: var(--secondarycolor)">
-        <a class="mt-3 align-self-center" href="#" onclick="changePage(8)"><img src="img/onlyLogo.svg" alt="Logo Litesoft"></a>
-    </nav>
-    <nav  class="navbar  navbar-expand-lg navbar-light  d-flex d-lg-none d-xl-none flex-row justify-content-between" style="background-color: var(--secondarycolor);position: sticky;top: -1px;z-index:1020;">
-        <a class="navbar-brand" href="#" onclick="changePage(8)"><img class="img-fluid w-50" src="img/logolitesoft.svg" alt=""></a>
+<div id="Mention" class="container-fluid p-0 d-none flex-column nano" style="background-color: var(--primarycolor)">
+    <nav  class="navbar  navbar-expand-lg navbar-light  d-flex flex-row justify-content-between" style="background-color: var(--secondarycolor);position: sticky;top: 0px;z-index:1020;">
+        <a class="navbar-brand" href="#" onclick="changePage(8)" style="min-height: 50px;min-width: 50px"><img src="img/FLECHE.svg" alt=""></a>
     </nav>
 
-    <div class="nano">
-        <div class="col-auto nano-content pl-3 pr-5" style="background-color:var(--primarycolor);color: var(--Text) ">
-            <p class="mt-3">
-                <h1 class="text-light">Politique de confidentialité</h1>
+<div class="container nano">
+    <div class="col-auto nano-content">
+        <div class="col-auto" style="background-color:var(--primarycolor);color: var(--Text) ">
+            <h1 class="text-light my-5">Mentions légales</h1>
+            <p class="mt-3 px-3 bar">
+                Editeur et hébergeur
 
-                La protection de votre vie privée est importante pour LiteSoft.
-                C’est la raison pour laquelle nous avons élaboré une politique de confidentialité qui régit la manière dont nous recueillons, utilisons, divulguons, transférons et stockons vos données personnelles.
+                LITESOFT
+                123 impasse du parc 60600 Agnetz - contact@litesoft.fr
+                S.A.R.L au capital de 5000 € - RCS de Beauvais 534 962 162 - FR 61 534 962 162
 
-                LiteSoft fournit des sites, des applications et des services (nommés « Services ») à des utilisateurs.
-                Cette politique de confidentialité définit notre politique en ce qui concerne les informations collectées auprès des visiteurs du site et des utilisateurs de nos Services.
-                En vertu de la loi applicable, LiteSoft est le responsable du traitement des données personnelles collectées en accord avec les utilisateurs.
-                <br><br>
-                <h1 class="text-light">Collecte et utilisation des données personnelles</h1>
+                Directeur de la Publication
 
+                Franck VIGIER
+                123 impasse du parc - 60600 Agnetz - fvigier@litesoft.fr
+            </p>
+
+            <h1 class="text-light my-5">Politique de confidentialité</h1>
+            <p class="mt-3 px-3 bar">
+
+
+            La protection de votre vie privée est importante pour LiteSoft.
+            C’est la raison pour laquelle nous avons élaboré une politique de confidentialité qui régit la manière dont nous recueillons, utilisons, divulguons, transférons et stockons vos données personnelles.
+
+            LiteSoft fournit des sites, des applications et des services (nommés « Services ») à des utilisateurs.
+            Cette politique de confidentialité définit notre politique en ce qui concerne les informations collectées auprès des visiteurs du site et des utilisateurs de nos Services.
+            En vertu de la loi applicable, LiteSoft est le responsable du traitement des données personnelles collectées en accord avec les utilisateurs.
+            </p>
+            <h1 class="text-light my-5">Collecte et utilisation des données personnelles</h1>
+            <p class="px-3 mt-3 bar">
                 Lorsque vous interagissez avec nous via nos Services, nous pouvons collecter des informations auprès de vous.
                 Nous recueillons des informations auprès de vous lorsque vous fournissez volontairement ces informations, par exemple lorsque vous vous inscrivez pour accéder à nos Services ou utiliser certains de nos Services. Les informations que nous collectons peuvent inclure, sans s'y limiter, le nom d’utilisateur et l'adresse e-mail ainsi que tout autre contenu que vous envoyez via nos Services.
-                <br><br>
-                <h1 class="text-light">Données personnelles que nous recueillons</h1>
 
+            </p>
+            <h1 class="text-light my-5">Données personnelles que nous recueillons</h1>
+            <p class="mt-3 px-3 bar">
                 Lorsque vous interagissez avec nous via nos Services, nous recevons et stockons certaines informations telles qu'une adresse IP, un ID d'appareil et les activités au sein des Services. Nous pouvons stocker ces informations ou ces informations peuvent être incluses dans des bases de données détenues et gérées par des sociétés affiliées, des agents ou des prestataires de services. Les Services peuvent utiliser ces informations et les mettre en commun avec d'autres informations pour suivre, par exemple, le nombre total de connexions ou le nombre total de visiteurs sur nos différents Services.
 
                 Cookies: nous utilisons des cookies et des technologies similaires pour suivre les paramètres de votre ordinateur local, tels que le compte auquel vous vous êtes connecté et les paramètres de notification. Les cookies sont des éléments de données que les sites et services peuvent définir sur le navigateur ou appareil et qui peuvent être lus lors des prochaines visites. Nous pouvons étendre notre utilisation des cookies pour enregistrer des données supplémentaires à mesure que de nouvelles fonctionnalités sont ajoutées à nos Services. De plus, nous utilisons des technologies telles que des balises Web et des gifs à pixel unique pour enregistrer des données de journal telles que les taux d'ouverture des e-mails envoyés par le système.
 
                 Nous pouvons utiliser des outils d'analyse de sites Web tiers tels que Google Analytics sur notre site Web qui utilisent des cookies pour collecter certaines informations concernant l’utilisation de nos Services. Cependant, vous pouvez désactiver les cookies en modifiant les paramètres de votre navigateur. De plus amples informations sur la procédure à suivre pour désactiver les cookies sont disponibles sur le site Web du fournisseur de navigateur Internet via l’écran d’aide.
-                <br><br>
-                <h1 class="text-light">Utilisation de vos données personnelles</h1>
 
-
+            </p>
+            <h1 class="text-light my-5">Utilisation de vos données personnelles</h1>
+            <p class="mt-3 px-3 bar">
                 Nous utilisons les informations que vous fournissez d'une manière conforme à la présente politique de confidentialité. Si vous fournissez des informations pour une certaine raison, nous pouvons utiliser ces informations en relation avec la raison pour laquelle elles ont été fournies. Par exemple, si vous nous contactez par e-mail, nous utiliserons les informations que vous fournissez pour répondre à votre question ou résoudre votre problème. De plus, si vous fournissez des informations afin d'accéder aux Services, nous utiliserons vos informations pour vous donner accès à ces services et pour surveiller votre utilisation de ces services. Nous pouvons également utiliser les informations collectées par le biais des Services pour nous aider à améliorer le contenu et la fonctionnalité des Services, à mieux comprendre nos utilisateurs et à améliorer les Services. Nous pouvons utiliser ces informations pour vous contacter à l'avenir afin de vous parler des services qui, selon nous, pourraient vous intéresser. Si nous le faisons, chaque communication marketing que nous vous enverrons contiendra des instructions vous permettant de vous « désinscrire » de la réception de futures communications marketing. De plus, si à tout moment vous ne souhaitez plus recevoir de communications marketing futures ou si vous souhaitez que votre nom soit supprimé de nos listes de diffusion, veuillez nous contacter comme indiqué ci-dessous.
-                <br><br>
-                <h1 class="text-light">Nos bases juridiques pour le traitement de vos données personnelles</h1>
 
-
+            </p>
+            <h1 class="text-light my-5">Nos bases juridiques pour le traitement de vos données personnelles</h1>
+            <p class="mt-3 px-3 bar">
                 Les lois de certaines juridictions obligent les entreprises à vous informer du fondement juridique sur lequel elles s'appuient pour utiliser ou divulguer vos données personnelles. Dans la mesure où ces lois s'appliquent, nos fondements juridiques sont les suivants:
                 Pour honorer nos engagements contractuels envers vous : une grande partie de notre traitement des données personnelles consiste à respecter nos obligations contractuelles envers nos utilisateurs, ou à prendre des mesures à la demande des utilisateurs en prévision de la conclusion d'un contrat avec eux. Par exemple, nous traitons les données personnelles sur cette base pour créer votre compte et fournir nos Services.
                 Intérêts légitimes : Dans de nombreux cas, nous traitons les données personnelles au motif qu'elles servent nos intérêts légitimes d'une manière qui n'est pas outrepassée par les intérêts ou les droits et libertés fondamentaux des personnes concernées.
@@ -184,10 +200,11 @@ session_destroy();
                 - Conformité légale : Nous devons utiliser et divulguer les données personnelles de certaines manières pour respecter nos obligations légales
                 - Pour protéger les intérêts vitaux de l'individu ou d'autres personnes, par exemple, nous pouvons collecter ou partager des données personnelles pour aider à résoudre une situation médicale urgente.
                 - Consentement : lorsque la loi l'exige, et dans certains autres cas, nous traitons les données personnelles sur la base de votre consentement implicite ou explicite.
-                <br><br>
-                <h1 class="text-light">La divulgation de vos informations</h1>
 
+            </p>
 
+            <h1 class="text-light my-5">La divulgation de vos informations</h1>
+            <p class="mt-3 px-3 bar">
                 LiteSoft n'a pas pour vocation de vendre vos informations. Nous considérons ces informations comme un élément essentiel de notre relation avec vous. Il existe cependant certaines circonstances dans lesquelles nous pouvons partager vos informations avec certains tiers, comme indiqué ci-dessous :
 
                 Transferts d’entreprises
@@ -214,25 +231,28 @@ session_destroy();
 
                 Données agrégées ou non identifiables
                 Nous pouvons également partager des informations agrégées ou non personnellement identifiables avec nos partenaires ou d'autres à des fins commerciales.
-                <br><br>
-                <h1 class="text-light"> Informations non sollicitées</h1>
 
+            </p>
+            <h1 class="text-light my-5"> Informations non sollicitées</h1>
 
+            <p class="mt-3 px-3 bar">
                 Vous pouvez nous fournir des idées de nouveaux produits ou de modifications de produits existants, et d'autres soumissions non sollicitées. Toutes ces informations seront considérées comme non confidentielles et nous serons libres de reproduire, utiliser, divulguer et distribuer ces informations non sollicitées à des tiers sans limitation ni attribution.
-                <br><br>
-                <h1 class="text-light">Liens vers d’autres sites Web</h1>
 
-
+            </p>
+            <h1 class="text-light my-5">Liens vers d’autres sites Web</h1>
+            <p class="mt-3 px-3 bar">
                 Cette politique de confidentialité s'applique uniquement aux Services. Les Services peuvent contenir des liens vers d'autres sites Web non exploités ou contrôlés par nous (nommés «Sites tiers»). Les politiques et procédures que nous avons décrites ici ne s'appliquent pas aux Sites Tiers. Les liens des Services n'impliquent pas que nous approuvons ou avons examiné les Sites Tiers. Nous vous suggérons de contacter ces sites directement pour obtenir des informations sur leurs politiques de confidentialité.
-                <br><br>
-                <h1 class="text-light">Conservation des données</h1>
 
+            </p>
 
+            <h1 class="text-light my-5">Conservation des données</h1>
+            <p class="mt-3 px-3 bar">
                 Nous conservons généralement les données personnelles aussi longtemps qu'elles peuvent être pertinentes aux fins identifiées ici. Pour éliminer les données personnelles, nous pouvons les anonymiser, les supprimer ou prendre d'autres mesures appropriées. Les données peuvent persister dans les copies effectuées à des fins de sauvegarde et de continuité des activités pendant un temps supplémentaire.
-                <br><br>
-                <h1 class="text-light">Sécurité</h1>
 
+            </p>
 
+            <h1 class="text-light my-5">Sécurité</h1>
+            <p class="mt-3 px-3 bar">
                 Nous prenons des mesures raisonnables pour protéger les informations fournies via les Services contre la perte, l'utilisation abusive et l'accès, la divulgation, la modification ou la destruction non autorisés. Cependant, aucune transmission Internet ou e-mail n'est jamais totalement sécurisée ou sans erreur. En particulier, les e-mails envoyés vers ou depuis les Services peuvent ne pas être sécurisés. Par conséquent, vous devez faire particulièrement attention à décider quelles informations vous nous envoyez par e-mail. Veuillez garder cela à l'esprit lorsque vous divulguez des informations via Internet.
 
                 Nous pensons que les utilisateurs doivent être traités de manière égale, où qu'ils se trouvent, et nous proposons donc les options suivantes pour contrôler vos données, quel que soit leur emplacement.
@@ -241,20 +261,26 @@ session_destroy();
                 Vous pouvez désactiver certains traitements liés aux cookies.
                 Les individus en Californie, dans l'Espace économique européen, au Canada, au Costa Rica et dans certaines autres juridictions en dehors des États-Unis ont certains droits légaux pour obtenir la confirmation que nous détenons des données personnelles les concernant, pour accéder aux données personnelles que nous détenons à leur sujet (y compris, dans certains cas, sous forme portable), et d’obtenir sa correction, sa mise à jour, sa modification ou sa suppression dans des circonstances appropriées. Ils peuvent également s'opposer à nos utilisations ou divulgations de données personnelles, pour demander une restriction de leur traitement ou retirer tout consentement, bien que de telles actions n'aient généralement pas d'effet rétroactif. Ils n'affecteront pas non plus notre capacité à poursuivre le traitement des données de manière licite.
 
-                <br><br>
-                <h1 class="text-light"> Modification de cette politique de confidentialité</h1>
+            </p>
 
-
+            <h1 class="text-light my-5"> Modification de cette politique de confidentialité</h1>
+            <p class="mt-3 px-3 bar">
                 Nous nous réservons le droit de mettre à jour ou de modifier cette politique de confidentialité à tout moment et de temps en temps sans préavis. Veuillez revoir cette politique périodiquement, et surtout avant de fournir des informations. Cette politique de confidentialité a été mise à jour pour la dernière fois à la date indiquée ci-dessus. Votre utilisation continue des Services après tout changement ou révision de cette politique de confidentialité indiquera votre accord avec les termes de cette politique de confidentialité révisée.
-                <br><br>
-                <h1 class="text-light">  Nous contacter</h1>
 
+            </p>
 
+            <h1 class="text-light my-5">  Nous contacter</h1>
+            <p class="mt-3 px-3 bar">
                 N'hésitez pas également à nous contacter si vous avez des questions concernant cette politique de confidentialité ou les pratiques d'information des Services.
                 Vous pouvez nous contacter en utilisant l’adresse e-mail : privacy@litesoft.fr.
+
             </p>
         </div>
     </div>
+</div>
+
+
+
 
 </div>
 <div id="Carousel" class="container-fluid p-0  min-vh-100 d-none justify-content-center" style="background-color: var(--primarycolor)">
@@ -416,15 +442,15 @@ session_destroy();
 
                     <div id="Prestation" class="col-auto d-none flex-column p-1 align-self-center my-3" style="background-color: #0b4358">
 
-                        <div class="col-auto">
-                            <h1 class="text-light" >
+                        <div class="col-auto d-flex flex-column">
+                            <h1 class="text-light d-flex d-sm-none d-md-flex d-lg-none" >
                                 Nos prestations
                             </h1>
-                            <div class="row">
-                                <div class="col-4 d-flex justify-content-center">
+                            <div class="col-auto d-flex flex-column flex-sm-column flex-md-row flex-xl-row">
+                                <div class="col-auto col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-self-center">
                                     <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoCloud.svg" alt="">
                                 </div>
-                                <div class="col-8 d-flex justify-content-center flex-column">
+                                <div class="col-auto col-sm-auto col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center flex-column">
                                     <p class="font-weight-bold text-light TitrePresta">Cloud</p>
                                     <p class="TextPresta">
                                         Où que vous soyez, accédez à votre outil en toute simplicité.
@@ -434,11 +460,11 @@ session_destroy();
                                     </p>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-4 d-flex justify-content-center">
+                            <div class="col-auto d-flex flex-column flex-sm-column flex-md-row flex-xl-row">
+                                <div class="col-auto col-sm-6 col-md-4 col-lg-4 col-xl-4  d-flex justify-content-center align-self-center">
                                     <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoDesktop.svg" alt="">
                                 </div>
-                                <div class="col-8 d-flex justify-content-center flex-column">
+                                <div class="col-auto col-sm-8 col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center flex-column">
                                     <p class="font-weight-bold text-light TitrePresta">Desktop</p>
                                     <p class="TextPresta">
                                         Notre priorité est de vous proposer un outil qui se
@@ -447,11 +473,11 @@ session_destroy();
                                     </p>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-4 d-flex justify-content-center">
+                            <div class="col-auto d-flex flex-column flex-sm-column flex-md-row flex-xl-row">
+                                <div class="col-auto col-sm-6 col-md-4 col-lg-4 col-xl-4  d-flex justify-content-center align-self-center">
                                     <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoMobile.svg" alt="">
                                 </div>
-                                <div class="col-8 d-flex justify-content-center flex-column">
+                                <div class="col-auto col-sm-auto col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center flex-column">
                                     <p class="font-weight-bold text-light TitrePresta">Smartphones et tablettes</p>
                                     <p class="TextPresta">
                                         Nous nous adaptons à tous types de supports en fonction de vos besoins, comme par exemple :
@@ -459,11 +485,11 @@ session_destroy();
                                     </p>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-4 d-flex justify-content-center">
+                            <div class="col-auto d-flex flex-column flex-sm-column flex-md-row flex-xl-row">
+                                <div class="col-auto col-sm-6 col-md-4 col-lg-4 col-xl-4  d-flex justify-content-center align-self-center">
                                     <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoReseaux.svg" alt="">
                                 </div>
-                                <div class="col-8 d-flex justify-content-center flex-column">
+                                <div class="col-auto col-sm-auto col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center flex-column">
                                     <p class="font-weight-bold text-light TitrePresta">Systèmes et réseaux</p>
                                     <p class="TextPresta">
                                         Mise à disposition d'infrastructures <br>
@@ -471,11 +497,11 @@ session_destroy();
                                     </p>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-4 d-flex justify-content-center ">
+                            <div class="col-auto d-flex flex-column flex-sm-column flex-md-row flex-xl-row">
+                                <div class="col-auto col-sm-6 col-md-4 col-lg-4 col-xl-4  d-flex justify-content-center align-self-center">
                                     <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoUltraMobile.svg" alt="">
                                 </div>
-                                <div class="col-8 d-flex justify-content-center flex-column">
+                                <div class="col-auto col-sm-auto col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center flex-column">
                                     <p class="font-weight-bold text-light TitrePresta">Ultra mobilité</p>
                                     <p class="TextPresta">
                                         Besoin d’encore plus de mobilité ?
@@ -506,7 +532,7 @@ session_destroy();
                         <div class="col-auto col-sm-auto col-md-auto col-lg-7 col-xl-7 d-flex flex-column justify-content-center">
                             <div class="col-auto border border-dark rounded p-0 mb-2">
                                 <div id="carousel1" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
+                                    <ol class="carousel-indicators d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
                                         <li data-target="#carousel1" data-slide-to="0" class="active"></li>
                                         <li data-target="#carousel1" data-slide-to="1"></li>
                                         <li data-target="#carousel1" data-slide-to="2"></li>
@@ -514,31 +540,31 @@ session_destroy();
                                     <div  class="carousel-inner">
                                         <div class="carousel-item active" data-interval="10000">
                                             <img id="loupe1" class="position-absolute h-100 w-100" src="img/LOUPE.svg"  onclick="CarouselFull(1)">
-                                            <img id="lol" src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
-                                            <div class="carousel-caption d-block d-md-none">
-                                                <h5>First slide label</h5>
+                                            <img  src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="..." onclick="CarouselFull(1)">
+                                            <div class="carousel-caption d-block d-md-none p-0" style="bottom: 0">
+                                                <h5 class="m-0">First slide label</h5>
                                             </div>
-                                            <div class="carousel-caption d-none d-md-block">
+                                            <div class="carousel-caption d-none d-md-block p-0" style="bottom: 0">
                                                 <h5 class="m-0">First slide label</h5>
                                             </div>
                                         </div>
                                         <div  class="carousel-item" data-interval="2000">
                                             <img id="loupe2" class="position-absolute h-100 w-100" src="img/LOUPE.svg" onclick="CarouselFull(1)">
-                                            <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
-                                            <div class="carousel-caption d-block d-md-none">
-                                                <h5>First slide label</h5>
+                                            <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="..." onclick="CarouselFull(1)">
+                                            <div class="carousel-caption d-block d-md-none p-0" style="bottom: 0">
+                                                <h5 class="m-0">First slide label</h5>
                                             </div>
-                                            <div class="carousel-caption d-none d-md-block">
+                                            <div class="carousel-caption d-none d-md-block p-0" style="bottom: 0">
                                                 <h5 class="m-0">First slide label</h5>
                                             </div>
                                         </div>
                                         <div  class="carousel-item">
                                             <img id="loupe3" class="position-absolute h-100 w-100" src="img/LOUPE.svg"  onclick="CarouselFull(1)">
-                                            <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
-                                            <div class="carousel-caption d-block d-md-none">
-                                                <h5>First slide label</h5>
+                                            <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="..." onclick="CarouselFull(1)">
+                                            <div class="carousel-caption d-block d-md-none p-0" style="bottom: 0">
+                                                <h5 class="m-0">First slide label</h5>
                                             </div>
-                                            <div class="carousel-caption d-none d-md-block">
+                                            <div class="carousel-caption d-none d-md-block" style="bottom: 0">
                                                 <h5 class="m-0">First slide label</h5>
                                             </div>
                                         </div>
@@ -555,7 +581,7 @@ session_destroy();
                             </div>
                             <div class="col-auto border border-dark rounded p-0">
                                 <div id="carousel2" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
+                                    <ol class="carousel-indicators d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
                                         <li data-target="#carousel2" data-slide-to="0" class="active"></li>
                                         <li data-target="#carousel2" data-slide-to="1"></li>
                                         <li data-target="#carousel2" data-slide-to="2"></li>
@@ -563,31 +589,31 @@ session_destroy();
                                     <div class="carousel-inner">
                                         <div class="carousel-item active" data-interval="10000">
                                             <img id="loupe4" class="position-absolute h-100 w-100" src="img/LOUPE.svg"  onclick="CarouselFull(1)">
-                                            <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
-                                            <div class="carousel-caption d-block d-md-none">
-                                                <h5>First slide label</h5>
+                                            <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="..." onclick="CarouselFull(1)">
+                                            <div class="carousel-caption d-block d-md-none p-0" style="bottom: 0">
+                                                <h5 class="m-0">First slide label</h5>
                                             </div>
-                                            <div class="carousel-caption d-none d-md-block">
+                                            <div class="carousel-caption d-none d-md-block p-0" style="bottom: 0">
                                                 <h5 class="m-0">First slide label</h5>
                                             </div>
                                         </div>
                                         <div class="carousel-item" data-interval="2000">
                                             <img id="loupe5" class="position-absolute h-100 w-100" src="img/LOUPE.svg"  onclick="CarouselFull(1)">
-                                            <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
-                                            <div class="carousel-caption d-block d-md-none">
-                                                <h5>First slide label</h5>
+                                            <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="..." onclick="CarouselFull(1)">
+                                            <div class="carousel-caption d-block d-md-none p-0" style="bottom: 0">
+                                                <h5 class="m-0">First slide label</h5>
                                             </div>
-                                            <div class="carousel-caption d-none d-md-block">
+                                            <div class="carousel-caption d-none d-md-block p-0" style="bottom: 0">
                                                 <h5 class="m-0">First slide label</h5>
                                             </div>
                                         </div>
                                         <div class="carousel-item">
                                             <img id="loupe6" class="position-absolute h-100 w-100" src="img/LOUPE.svg"  onclick="CarouselFull(1)">
-                                            <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="...">
-                                            <div class="carousel-caption d-block d-md-none">
-                                                <h5>First slide label</h5>
+                                            <img src="https://placeimg.com/572/322/animals" class="img-fluid d-block w-100" alt="..." onclick="CarouselFull(1)">
+                                            <div class="carousel-caption d-block d-md-none p-0" style="bottom: 0">
+                                                <h5 class="m-0">First slide label</h5>
                                             </div>
-                                            <div class="carousel-caption d-none d-md-block">
+                                            <div class="carousel-caption d-none d-md-block" style="bottom: 0">
                                                 <h5 class="m-0">First slide label</h5>
                                             </div>
                                         </div>
@@ -858,7 +884,7 @@ session_destroy();
 
                 </div>
                 <!--nav-bar mobile         -->
-                <div class="test w-100 d-flex d-sm-flex d-md-flex d-lg-none d-xl-none" style="position: sticky; bottom: 0">
+                <div class="test w-100 d-flex d-sm-flex d-md-flex d-lg-none d-xl-none" style="position: sticky; bottom: 0;z-index: 1040">
                     <div class="fond w-100">
                         <div class="navigation">
                             <ul>

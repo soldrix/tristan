@@ -177,7 +177,11 @@
     cursor: pointer;
 }
 
-.nano { background: #bba; height: 100vh; }
+.bar{
+    border-left: 2px solid;
+}
+
+.nano { background: #00354a; height: 100vh; }
 .nano .nano-content { padding: 1px; }
 .nano .nano-pane   { background: #062b3b; }
 .nano .nano-pane .nano-slider { background: #687e87;}
