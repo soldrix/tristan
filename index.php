@@ -23,11 +23,14 @@ session_destroy();
 
         /*plus que xl*/
         @media (min-width: 1600px){
+            .nav-left{
+                width: 50%;
+            }
             p{
-                font-size: 30px;
+                font-size: 40px;
             }
             h1{
-                font-size: 40px;
+                font-size: 50px;
             }
             .col-xl-7-5{
                 flex: 0 0 62.555555%;
@@ -41,9 +44,11 @@ session_destroy();
         /*xl*/
         @media (min-width: 1200px) and (max-width: 1600px){
             p{
-                font-size: 15px;
+                font-size: 25px;
             }
-
+            h1{
+                font-size: 35px;
+            }
             .col-xl-7-5{
                 flex: 0 0 62.555555%;
                 max-width: 62.555555%;
@@ -122,12 +127,7 @@ session_destroy();
                 top: 56px;
             }
         }
-        .TitrePresta{
-            font-size: 25px;
-        }
-        .TextPresta{
-            font-size: 20px;
-        }
+
     </style>
 </head>
 <body>
@@ -324,8 +324,13 @@ session_destroy();
 
     <!--    nav-bar left-->
     <nav class="col-lg-1 position-sticky d-none d-lg-flex flex-column pt-1 max-vh-100 justify-content-center" style="background-color: var(--secondarycolor)">
-        <a class="mt-3 align-self-center" href="#" onclick="changePage(1)"><img src="img/onlyLogo.svg" alt="Logo Litesoft"></a>
-        <ul class="list-unstyled h-100 d-flex flex-column justify-content-center align-self-center" style="width: 50px">
+
+        <ul class="list-unstyled d-flex flex-column justify-content-center align-self-center nav-left">
+            <li class="d-flex justify-content-center h-100 w-100 px-2">
+                <a class="mt-3 align-self-center w-100 h-100" href="#" onclick="changePage(1)"><img class="w-100 h-100" src="img/onlyLogo.svg" alt="Logo Litesoft"></a>
+            </li>
+        </ul>
+        <ul class="list-unstyled h-100 d-flex flex-column justify-content-center align-self-center nav-left" style="width: 50%">
             <li class="my-3">
                 <a href="#" onclick="changePage(2)"><img id="Prestaw" src="img/iconPresta.svg" alt="Préstation" ></a>
             </li>
@@ -451,8 +456,8 @@ session_destroy();
                                     <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoCloud.svg" alt="">
                                 </div>
                                 <div class="col-auto col-sm-auto col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center flex-column">
-                                    <p class="font-weight-bold text-light TitrePresta">Cloud</p>
-                                    <p class="TextPresta">
+                                    <p class="font-weight-bold text-light">Cloud</p>
+                                    <p>
                                         Où que vous soyez, accédez à votre outil en toute simplicité.
                                         Applications, intranet, extranet.
                                         De l'interface graphique à la mise au point technique,
@@ -465,8 +470,8 @@ session_destroy();
                                     <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoDesktop.svg" alt="">
                                 </div>
                                 <div class="col-auto col-sm-8 col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center flex-column">
-                                    <p class="font-weight-bold text-light TitrePresta">Desktop</p>
-                                    <p class="TextPresta">
+                                    <p class="font-weight-bold text-light">Desktop</p>
+                                    <p>
                                         Notre priorité est de vous proposer un outil qui se
                                         distingue par sa simplicité, sa rapidité, totalement adapté, efficace, et au meilleur prix.
                                         Les applications Litesoft sont des outils sur mesure développés pour des besoins métiers précis.
@@ -478,8 +483,8 @@ session_destroy();
                                     <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoMobile.svg" alt="">
                                 </div>
                                 <div class="col-auto col-sm-auto col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center flex-column">
-                                    <p class="font-weight-bold text-light TitrePresta">Smartphones et tablettes</p>
-                                    <p class="TextPresta">
+                                    <p class="font-weight-bold text-light">Smartphones et tablettes</p>
+                                    <p>
                                         Nous nous adaptons à tous types de supports en fonction de vos besoins, comme par exemple :
                                         gestion de suivi de chantiers déclaration et suivi d’incidents.
                                     </p>
@@ -490,8 +495,8 @@ session_destroy();
                                     <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoReseaux.svg" alt="">
                                 </div>
                                 <div class="col-auto col-sm-auto col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center flex-column">
-                                    <p class="font-weight-bold text-light TitrePresta">Systèmes et réseaux</p>
-                                    <p class="TextPresta">
+                                    <p class="font-weight-bold text-light">Systèmes et réseaux</p>
+                                    <p>
                                         Mise à disposition d'infrastructures <br>
                                         sur mesure, adaptables et résiliantes.
                                     </p>
@@ -502,8 +507,8 @@ session_destroy();
                                     <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoUltraMobile.svg" alt="">
                                 </div>
                                 <div class="col-auto col-sm-auto col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center flex-column">
-                                    <p class="font-weight-bold text-light TitrePresta">Ultra mobilité</p>
-                                    <p class="TextPresta">
+                                    <p class="font-weight-bold text-light">Ultra mobilité</p>
+                                    <p>
                                         Besoin d’encore plus de mobilité ?
                                         Nous sommes capables d’interfacer nos applications
                                         ou d’en créer des spécifiques pour des outils
