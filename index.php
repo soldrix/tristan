@@ -405,7 +405,7 @@ session_destroy();
                                 </p>
                             </div>
                         </div>
-                        <div class="col-auto col-sm-auto col-md-auto col-lg-auto d-flex mb-5 flex-column flex-md-column flex-lg-column p-0" style="">
+                        <div class="col-auto col-sm-auto col-md-auto col-lg-auto d-flex mb-3 flex-column flex-md-column flex-lg-column p-0" style="">
                             <div class="col-auto col-sm-auto col-md-auto d-flex flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row p-0 justify-content-sm-between justify-content-md-between justify-content-lg-between">
                                 <div class="col-auto col-sm-7-5  col-md-7-5 col-lg-7-5 col-xl-7-5" style="background-color:#0B4358;">
                                     <h1 class="text-light mt-1" style="font-size: 30px">Nos horaires</h1>
@@ -443,6 +443,34 @@ session_destroy();
 
 
                         </div>
+                        <div class="col-auto d-flex d-sm-flex d-md-flex d-lg-none d-xl-none flex-column mb-5" style="background-color: #0b4358">
+                            <h1 class="text-light text-left mt-3 mb-4">Contactez nous</h1>
+                            <div class="col-auto d-flex flex-column flex-sm-column flex-md-row  mb-3">
+                                <div class="col-auto col-sm-auto col-md-6 d-flex flex-column mb-2">
+                                    <div class="col-6 align-self-center d-flex justify-content-center mb-2">
+                                        <img class="align-self-center h-100 w-100" src="img/enveloppe.svg" alt="">
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="text-center" style="color: #1B81C4">
+                                            Service commercial <br>
+                                            <a class="text-decoration-none" style="color: #AAB1B4" href="mailto:contact@litesoft.fr">contact@litesoft.fr</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-auto col-sm-auto col-md-6 d-flex flex-column mb-2">
+                                    <div class="col-6 d-flex align-self-center justify-content-center mb-2">
+                                        <img class="align-self-center h-100 w-100" src="img/boue.svg" alt="">
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="text-center" style="color: #1B81C4 ">
+                                            Support <br>
+                                            <a class="text-decoration-none" style="color: #AAB1B4" href="mailto:support@litesoft.fr">support@litesoft.fr</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div id="Prestation" class="col-auto d-none flex-column p-1 align-self-center my-3" style="background-color: #0b4358">
