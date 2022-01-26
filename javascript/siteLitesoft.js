@@ -12,48 +12,58 @@ function clearPage(){
     $('#Equipew').attr('src', 'img/iconEquipe.svg')
     $('#Realsw').attr('src', 'img/iconReals.svg')
     $('#Faqw').attr('src', 'img/iconFaq.svg')
+
+    $('#collapseFaq, #collapseFaq1, #collapseFaq2, #collapseFaq21, #collapseFaq3, #collapseFaq31').collapse("hide")
+
 }
+
 
 function changePage(page){
 
     if (page==1){
         clearPage()
         $('#Home').removeClass('d-none').addClass('d-flex')
+        $("#test, #page").scrollTop(0);
     }
     if (page==2){
         clearPage()
         $('#Prestation').removeClass('d-none').addClass('d-flex')
         $('#Prestaw').attr('src', 'img/iconPrestaw.svg')
+        $("#test, #page").scrollTop(0);
     }
     if (page==3){
         clearPage()
         $('#Reference').removeClass('d-none').addClass('d-flex')
         $('#refsw').attr('src', 'img/iconRefsw.svg')
+        $("#test, #page").scrollTop(0);
     }
     if (page==4){
         clearPage()
         $('#Equipe').removeClass('d-none').addClass('d-flex')
         $('#Equipew').attr('src', 'img/iconEquipew.svg')
-
+        $("#test, #page").scrollTop(0);
     }
     if (page==5){
         clearPage()
         $('#Realisation').removeClass('d-none').addClass('d-flex')
         $('#Realsw').attr('src', 'img/iconRealsw.svg')
-
+        $("#test, #page").scrollTop(0);
     }
     if (page==6){
         clearPage()
         $('#Faq').removeClass('d-none').addClass('d-flex')
         $('#Faqw').attr('src', 'img/iconFaqw.svg')
+        $("#test, #page").scrollTop(0);
     }
     if (page==7){
         $('#SiteLitesoft').removeClass('d-flex').addClass('d-none')
         $('#Mention').removeClass('d-none').addClass('d-flex')
+        $("#test, #page").scrollTop(0);
     }
     if (page==8){
         $('#SiteLitesoft').removeClass('d-none').addClass('d-flex')
         $('#Mention').removeClass('d-flex').addClass('d-none')
+        $("#test, #page").scrollTop(0);
     }
 }
 
@@ -92,3 +102,14 @@ $(".carousel-item").on('mouseover',function () {
     })
 })
 
+
+
+$('#collapseFaq').on('shown.bs.collapse',function () {
+    $('#collapseFaq2, #collapseFaq3, #collapseFaq21, #collapseFaq31').collapse("hide")
+})
+$('#collapseFaq2').on('shown.bs.collapse',function () {
+    $('#collapseFaq, #collapseFaq3, #collapseFaq1, #collapseFaq31').collapse("hide")
+})
+$('#collapseFaq3').on('shown.bs.collapse',function () {
+    $('#collapseFaq, #collapseFaq2, #collapseFaq1, #collapseFaq21').collapse("hide")
+})

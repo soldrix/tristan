@@ -20,7 +20,9 @@ session_destroy();
             --tertiarycolor:#0b4358;
             --Text:#5da6c1;
         }
-
+        p{
+            font-family: Verdana,sans-serif,monospace;
+        }
         /* latin */
         @font-face {
             font-family: 'Baloo 2';
@@ -1080,7 +1082,6 @@ session_destroy();
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/javascripts/jquery.nanoscroller.min.js"></script>
 
 <script type="text/javascript">
-    alert($(window).height());
     let myChart = document.getElementById('myChart').getContext('2d');
 
     let massPopChart = new Chart(myChart,{
@@ -1129,25 +1130,7 @@ session_destroy();
     list.forEach((item)=>
         item.addEventListener('click',activeLink));
 
-    $('#collapse2').on('shown.bs.collapse',function () {
-        document.querySelector('.textmention').scrollIntoView({
-            behavior:'smooth'
-        });
-    })
 
-    // function carousel(hide) {
-    //     if (hide==true) {
-    //
-    //         $("#Carousel").removeClass().addClass("d-none")
-    //         $("#accordion2").removeClass().addClass("accordion d-block bg-dark")
-    //         $("#pageSite").removeClass().addClass('container-fluid p-0 d-sm-block  min-vh-100 d-lg-block d-xl-flex')
-    //
-    //     }
-    //     if (hide==false){
-    //         $("#pageSite, #accordion2").removeClass().addClass('d-none')
-    //         $("#Carousel").addClass('container-fluid p-0 bg-dark min-vh-100 d-flex justify-content-center')
-    //     }
-    // }
 
 
     $(".carousel-item").on('mouseover',function () {
