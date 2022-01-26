@@ -21,8 +21,24 @@ session_destroy();
             --Text:#5da6c1;
         }
 
+        /* latin */
+        @font-face {
+            font-family: 'Baloo 2';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/baloo2/v9/wXK0E3kTposypRydzVT08TS3JnAmtdgazZpo_lGP6HcMqzQ.woff) format('woff');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        h1{
+            font-family:'Baloo 2';
+        }
         /*plus que xl*/
         @media (min-width: 1600px){
+            h1{
+                font-family: 'Baloo 2', cursive;
+            }
             .nav-left{
                 width: 50%;
             }
@@ -43,6 +59,9 @@ session_destroy();
         }
         /*xl*/
         @media (min-width: 1200px) and (max-width: 1600px){
+            h1{
+                font-family: 'Baloo 2', cursive;
+            }
             p{
                 font-size: 25px;
             }
@@ -60,6 +79,9 @@ session_destroy();
         }
         /*lg*/
         @media (min-width: 991px) and (max-width: 1200px){
+            h1{
+                font-family: 'Baloo 2', cursive;
+            }
             p{
                 font-size: 15px;
             }
@@ -383,7 +405,7 @@ session_destroy();
                                 <img class=" align-self-center img-fluid w-100" src="img/logo.gif" alt="logo" >
                             </div>
                             <div class="col-auto col-sm-auto col-md-auto col-lg-7 align-self-center my-2 p-3 text-light" style="background-color: #0B4358;font-size: 10px">
-                                <h1 class="text-center font-weight-bold" style="color: #1B81C4;">Qui Somme nous?</h1>
+                                <h1 class="text-center font-weight-bold mb-4" style="color: #1B81C4;">Qui Somme nous?</h1>
                                 <p class="font-weight-normal">
                                     Créée en 2011, Litesoft est une équipe de développeurs soudée et dynamique répartie sur deux sites :
 
@@ -408,7 +430,7 @@ session_destroy();
                         <div class="col-auto col-sm-auto col-md-auto col-lg-auto d-flex mb-3 flex-column flex-md-column flex-lg-column p-0" style="">
                             <div class="col-auto col-sm-auto col-md-auto d-flex flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row p-0 justify-content-sm-between justify-content-md-between justify-content-lg-between">
                                 <div class="col-auto col-sm-7-5  col-md-7-5 col-lg-7-5 col-xl-7-5" style="background-color:#0B4358;">
-                                    <h1 class="text-light mt-1" style="font-size: 30px">Nos horaires</h1>
+                                    <h1 class="text-light mt-1" >Nos horaires</h1>
                                     <table class="table table-borderless" style="color: #52B8DD">
                                         <thead>
                                         <tr class="table-active" >
@@ -433,7 +455,7 @@ session_destroy();
                                 </div>
 
                                 <div class="col-auto col-sm-4 col-md-4 col-lg-4  p-3 d-flex justify-content-center flex-column" style="background-color: #0B4358">
-                                    <h1 class="text-light">titre</h1>
+                                    <h1 class="text-light">Titre</h1>
                                     <canvas id="myChart" class="align-self-center mb-3"></canvas>
                                     <div id="legend" class="col-auto d-flex px-0 py-2 justify-content-center"></div>
 
@@ -477,14 +499,14 @@ session_destroy();
 
                         <div class="col-auto d-flex flex-column">
                             <h1 class="text-light d-flex" >
-                                Nos prestations
+                                Nos préstations
                             </h1>
                             <div class="col-auto d-flex flex-column flex-sm-column flex-md-row flex-xl-row">
                                 <div class="col-auto col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-self-center">
                                     <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoCloud.svg" alt="">
                                 </div>
                                 <div class="col-auto col-sm-auto col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center flex-column">
-                                    <p class="font-weight-bold text-light">Cloud</p>
+                                    <h1 class="text-light">Cloud</h1>
                                     <p>
                                         Où que vous soyez, accédez à votre outil en toute simplicité.
                                         Applications, intranet, extranet.
@@ -498,7 +520,7 @@ session_destroy();
                                     <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoDesktop.svg" alt="">
                                 </div>
                                 <div class="col-auto col-sm-8 col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center flex-column">
-                                    <p class="font-weight-bold text-light">Desktop</p>
+                                    <h1 class="text-light">Desktop</h1>
                                     <p>
                                         Notre priorité est de vous proposer un outil qui se
                                         distingue par sa simplicité, sa rapidité, totalement adapté, efficace, et au meilleur prix.
@@ -511,7 +533,7 @@ session_destroy();
                                     <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoMobile.svg" alt="">
                                 </div>
                                 <div class="col-auto col-sm-auto col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center flex-column">
-                                    <p class="font-weight-bold text-light">Smartphones et tablettes</p>
+                                    <h1 class="text-light">Smartphones et tablettes</h1>
                                     <p>
                                         Nous nous adaptons à tous types de supports en fonction de vos besoins, comme par exemple :
                                         gestion de suivi de chantiers déclaration et suivi d’incidents.
@@ -523,7 +545,7 @@ session_destroy();
                                     <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoReseaux.svg" alt="">
                                 </div>
                                 <div class="col-auto col-sm-auto col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center flex-column">
-                                    <p class="font-weight-bold text-light">Systèmes et réseaux</p>
+                                    <h1 class="text-light">Systèmes et réseaux</h1>
                                     <p>
                                         Mise à disposition d'infrastructures <br>
                                         sur mesure, adaptables et résiliantes.
@@ -535,7 +557,7 @@ session_destroy();
                                     <img class="img-fluid my-3 h-75 w-75 align-self-center" src="img/icoUltraMobile.svg" alt="">
                                 </div>
                                 <div class="col-auto col-sm-auto col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center flex-column">
-                                    <p class="font-weight-bold text-light">Ultra mobilité</p>
+                                    <h1 class="text-light">Ultra mobilité</h1>
                                     <p>
                                         Besoin d’encore plus de mobilité ?
                                         Nous sommes capables d’interfacer nos applications
@@ -670,7 +692,7 @@ session_destroy();
                     <div id="Equipe" class="col-auto d-none flex-column p-2 align-self-center my-2 w-100" style="background-color: #0b4358">
                         <div class="col-auto d-flex flex-column  flex-sm-column flex-md-column flex-lg-row flex-xl-row justify-content-center">
                             <div class="col-auto col-sm-auto col-md-auto col-lg-6 col-xl-6 d-flex flex-column">
-                                <p class="text-light font-weight-bold text-center">Notre Equipe </p>
+                                <h1 class="text-light text-center">Notre Equipe </h1>
                                 <p class="text-left">
                                     Description de l'equipe :
                                     Aliquam enim purus, consectetur eu sapien sit amet, bibendum condimentum ex.
@@ -711,7 +733,7 @@ session_destroy();
                     <div id="Faq" class="col-auto d-none flex-column align-self-center my-2  w-100" >
 
                         <div class="col-auto p-2" style="background-color: #0b4358;">
-                            <h2 class="text-center mb-3 font-weight-bold text-capitalize text-light">F.A.Q</h2>
+                            <h1 class="text-center mb-3 text-light">F.A.Q</h1>
                             <div class="accordion mb-2" id="accordionFaq">
                                     <div class="card border-0">
                                         <div class="card-header" id="headingFaq" style="background-color: #5da6c1">
@@ -995,7 +1017,7 @@ session_destroy();
     <div class="col-lg-2 position-sticky max-vh-100 d-lg-flex d-xl-flex flex-column p-0 d-md-none d-sm-none d-none" style="background-color: #0B4358">
 
         <div class="col-auto  px-0 align-self-center d-flex flex-column" >
-            <p class="text-light mb-0 mt-2">Profil</p>
+            <h1 class="text-light mb-0 mt-2">Profil</h1>
             <!--            image profil-->
             <div class="d-flex justify-content-center mb-3 align-self-center" style="background-image: url('img/singe.svg');background-repeat: no-repeat;object-fit: cover;width: 150px;height: 150px">
                 <div class="align-self-center p-0"  style="background: white url('img/jean.jpg') no-repeat center center;border-radius: 100%;background-size: cover ;width: 130px;height: 130px;">
@@ -1008,7 +1030,7 @@ session_destroy();
         </div>
 
         <div class="col-auto d-flex flex-column align-self-center">
-            <p class="text-light text-center mt-3">Contactez nous</p>
+            <h1 class="text-light text-center mt-3">Contactez nous</h1>
             <div class="col-auto d-flex justify-content-center flex-column w-100 p-0">
                 <img class="h-50 w-50 align-self-center mb-1" src="img/enveloppe.svg" alt="">
                 <p class="text-center" style="color: #1B81C4">
